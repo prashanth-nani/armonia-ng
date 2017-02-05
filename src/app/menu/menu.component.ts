@@ -11,28 +11,28 @@ import * as fs from 'fs';
 })
 export class MenuComponent implements OnInit {
 
-  title: string = 'don';
+  title: string = 'Loading...';
   files: string[];
 
-  constructor() { 
-    console.log("Hello world");
-   this.metadata(`/media/prashanth/body/Music/Arjun/say.mp3`).then((title)=>{
-     this.title = title;
-   }).catch((err)=>{
+  constructor() {
+   this.metadata(`/media/prashanth/body/Music/Arjun/say.mp3`)
+  .then((md)=>{
+     this.title = md.title;
+   })
+   .catch((err)=>{
      this.title = "Error";
    })
-    // this.title = 'seenu';
     this.files = fs.readdirSync('/media/prashanth/body/Music/Arjun');
     console.log(this.files);
   }
 
-  metadata(path: string):Promise<string>{
-    return new Promise<string>((resolve, reject)=>{
+  metadata(path: string):Promise<MM.Metadata>{
+    return new Promise<MM.Metadata>((resolve, reject)=>{
          mm(fs.createReadStream(path), (err, metadata)=>{
            if(err)
               reject("Error occured");
             else
-              resolve(metadata.title);
+              resolve(metadata);
          });
     })
 
