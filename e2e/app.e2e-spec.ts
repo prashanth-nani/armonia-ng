@@ -1,10 +1,10 @@
-import { Armonia2NgPage } from './app.po';
+import { ArmoniaPage } from './app.po';
 
-describe('armonia2-ng App', function() {
-  let page: Armonia2NgPage;
+describe('armonia App', function() {
+  let page: ArmoniaPage;
 
   beforeEach(() => {
-    page = new Armonia2NgPage();
+    page = new ArmoniaPage();
   });
 
   it('should display message saying app works', () => {

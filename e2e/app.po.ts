@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class Armonia2NgPage {
+export class ArmoniaPage {
   navigateTo() {
     return browser.get('/');
   }

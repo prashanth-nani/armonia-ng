@@ -1,0 +1,31 @@
+{
+  "name": "armonia",
+  "version": "1.0.0",
+  "description": "Cross platform music player",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ../dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashanth-nani/armonia.git"
+  },
+  "keywords": [
+    "music",
+    "player",
+    "armonia",
+    "audio",
+    "linux",
+    "angular"
+  ],
+  "author": "Prashanth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prashanth-nani/armonia/issues"
+  },
+  "homepage": "https://github.com/prashanth-nani/armonia#readme",
+  "dependencies": {
+    "@types/musicmetadata": "^2.0.2",
+    "musicmetadata": "^2.0.5"
+  }
+}
