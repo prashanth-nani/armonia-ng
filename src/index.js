@@ -6,8 +6,8 @@ let mainWindow = null;
 app.on('ready', function(){
     mainWindow = new BrowserWindow();
 
-    // mainWindow.loadURL(path.join("file://", __dirname, "index.html"));
-    mainWindow.loadURL("http://localhost:4200");
+    mainWindow.loadURL(path.join("file://", __dirname, "index.html"));
+    // mainWindow.loadURL("http://localhost:4200");
     
 
     mainWindow.on('closed', function(){

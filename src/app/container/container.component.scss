@@ -1,0 +1,19 @@
+app-menu{
+    display: block;
+    position: fixed;
+    background-color: #1d1d1d;
+    height: 100%;
+    width: 23%;
+    border: 1px solid green;
+    padding: 25px;
+}
+app-content{
+    display: block;
+    margin-left: 23%;
+    border: 1px solid blue;
+    overflow-y: hidden;
+    width: 77%;
+    height: 100%;
+    padding: 0 25px 115px;
+    background-color: #000000;
+}

@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./assets/fonts/OpenSans-Light.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-user-select: none;
+    cursor: default;
+    :focus {
+        outline: none;
+    }
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+app-root{
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #FFF;
+}

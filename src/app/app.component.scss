@@ -1,0 +1,17 @@
+app-container{
+    display: block;
+    font-size: 15px;
+    height: 100%;
+    width: 100%;
+    color: #FFF;
+}
+app-player{
+    display: block;
+    background-color: #133e92;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    border: 1px solid red;
+    top: calc(100% - 80px);
+    // font-size: 0;
+}
