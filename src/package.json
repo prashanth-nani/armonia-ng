@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prashanth-nani/armonia.git"
+    "url": "git+https://github.com/prashanth-nani/armonia-ng.git"
   },
   "keywords": [
     "music",
@@ -19,13 +19,9 @@
     "angular"
   ],
   "author": "Prashanth",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/prashanth-nani/armonia/issues"
+    "url": "https://github.com/prashanth-nani/armonia-ng/issues"
   },
-  "homepage": "https://github.com/prashanth-nani/armonia#readme",
-  "dependencies": {
-    "@types/musicmetadata": "^2.0.2",
-    "musicmetadata": "^2.0.5"
-  }
+  "homepage": "https://github.com/prashanth-nani/armonia-ng#readme"
 }

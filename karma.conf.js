@@ -8,6 +8,7 @@ module.exports = function (config) {
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
+      require('karma-electron'),
       require('karma-remap-istanbul'),
       require('@angular/cli/plugins/karma')
     ],
@@ -15,7 +16,7 @@ module.exports = function (config) {
       { pattern: './src/test.ts', watched: false }
     ],
     preprocessors: {
-      './src/test.ts': ['@angular/cli']
+      './src/test.ts': ['@angular/cli'],
     },
     mime: {
       'text/x-typescript': ['ts','tsx']
@@ -37,7 +38,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['Electron'],
     singleRun: false
   });
 };

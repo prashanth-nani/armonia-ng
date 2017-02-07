@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import * as mm from 'musicmetadata';
-// const mm = require('musicmetadata');
 import { join } from 'path';
 import * as fs from 'fs';
 
@@ -15,15 +14,6 @@ export class MenuComponent implements OnInit {
   files: string[];
 
   constructor() {
-   this.metadata(`/media/prashanth/body/Music/Arjun/say.mp3`)
-  .then((md)=>{
-     this.title = md.title;
-   })
-   .catch((err)=>{
-     this.title = "Error";
-   })
-    this.files = fs.readdirSync('/media/prashanth/body/Music/Arjun');
-    console.log(this.files);
   }
 
   metadata(path: string):Promise<MM.Metadata>{
@@ -39,6 +29,15 @@ export class MenuComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.metadata(`/media/prashanth/body/Music/Arjun/say.mp3`)
+  .then((md)=>{
+     this.title = md.title;
+   })
+   .catch((err)=>{
+     this.title = "Error";
+   })
+    this.files = fs.readdirSync('/media/prashanth/body/Music/Arjun');
+    console.log(this.files);
   }
 
 }

@@ -1,7 +1,7 @@
 {
   "name": "armonia",
   "version": "0.0.0",
-  "license": "MIT",
+  "license": "ISC",
   "angular-cli": {},
   "main": "index.js",
   "scripts": {
@@ -23,10 +23,12 @@
     "@angular/platform-browser": "^2.3.1",
     "@angular/platform-browser-dynamic": "^2.3.1",
     "@angular/router": "^3.3.1",
-    "@types/musicmetadata": "^2.0.2",
     "core-js": "^2.4.1",
+    "electron-settings": "^2.2.2",
+    "jquery": "^3.1.1",
     "musicmetadata": "^2.0.5",
     "rxjs": "^5.0.1",
+    "semantic-ui": "^2.2.7",
     "ts-helpers": "^1.1.1",
     "zone.js": "^0.7.2"
   },
@@ -36,6 +38,7 @@
     "@types/electron": "^1.4.31",
     "@types/es6-promise": "0.0.32",
     "@types/jasmine": "2.5.38",
+    "@types/musicmetadata": "^2.0.2",
     "@types/node": "^6.0.42",
     "codelyzer": "~2.0.0-beta.1",
     "electron": "^1.4.15",
@@ -44,11 +47,21 @@
     "karma": "1.2.0",
     "karma-chrome-launcher": "^2.0.0",
     "karma-cli": "^1.0.1",
+    "karma-electron": "^5.1.1",
     "karma-jasmine": "^1.0.2",
     "karma-remap-istanbul": "^0.2.1",
     "protractor": "~4.0.13",
     "ts-node": "1.2.1",
     "tslint": "^4.3.0",
     "typescript": "~2.0.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prashanth-nani/armonia-ng.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prashanth-nani/armonia-ng/issues",
+    "email": "posttoprashanth@gmail.com"
+  },
+  "author": "Prashanth"
 }
