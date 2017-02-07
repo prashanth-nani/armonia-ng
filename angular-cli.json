@@ -22,7 +22,6 @@
         "styles.scss"
       ],
       "scripts": [
-        "../node_modules/jquery/dist/jquery.js"
       ],
       "environments": {
         "source": "environments/environment.ts",

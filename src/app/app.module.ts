@@ -9,6 +9,8 @@ import { ContentComponent } from './content/content.component';
 import { PlayerComponent } from './player/player.component';
 import { ContainerComponent } from './container/container.component';
 
+import {SongService } from './services/song.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,7 @@ import { ContainerComponent } from './container/container.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [SongService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
