@@ -10,6 +10,9 @@ import { PlayerComponent } from './player/player.component';
 import { ContainerComponent } from './container/container.component';
 
 import {SongService } from './services/song.service';
+import { AlbumComponent } from './album/album.component';
+import { SongListComponent } from './song-list/song-list.component';
+import { AlbumListComponent } from './album-list/album-list.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import {SongService } from './services/song.service';
     MenuComponent,
     ContentComponent,
     PlayerComponent,
-    ContainerComponent
+    ContainerComponent,
+    AlbumComponent,
+    SongListComponent,
+    AlbumListComponent
   ],
   imports: [
     BrowserModule,
